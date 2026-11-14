@@ -2,6 +2,7 @@
 // To add one: copy a line, put it at the TOP, change the date, app and text.
 // app must be "Wiki Walk" or "TV Rex". Dates are YYYY-MM-DD.
 window.UPDATES = [
+  { date: "2026-11-14", app: "TV Rex",    text: "New here? Request an invite from the sign-in screen." },
   { date: "2026-11-14", app: "Wiki Walk", text: "A new map icon and new colors to match TV Rex." },
   { date: "2026-11-14", app: "Wiki Walk", text: "Your OpenAI key now stays saved." },
   { date: "2026-11-14", app: "TV Rex",    text: "New name: TV Rex, with a new dinosaur icon." },
