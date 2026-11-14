@@ -90,7 +90,7 @@ img { max-width: 100%; }
 .update-list { list-style: none; margin: 8px 0 0; padding: 0; border-top: 3px solid var(--ink); }
 .update { display: flex; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #CFCFCF; }
 .update:last-child { border-bottom: 3px solid var(--ink); }
-.update img { width: 52px; height: 52px; flex: none; display: block; }
+.update img { width: 52px; height: 52px; flex: none; display: block; border-radius: 22.5%; } /* iOS app-icon corner, scales with size */
 .update-meta { font-family: var(--sans); font-size: 13px; color: #5A5A5A; }
 .update-meta b { color: var(--ink); }
 .update-text { display: block; margin-top: 4px; font-size: 21px; font-weight: 600; line-height: 1.3; }
