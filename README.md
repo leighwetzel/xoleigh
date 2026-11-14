@@ -23,4 +23,4 @@ In `site.js`, set `substackUrl` to your Substack address. The Subscribe button a
 
 ## Credits
 
-TV Rex icon uses Google's Noto Emoji (Apache 2.0).
+TV Rex and Wiki Walk icons use Google's Noto Emoji (Apache 2.0).

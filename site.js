@@ -9,8 +9,8 @@ var SETTINGS = {
 };
 
 var APP_ICONS = {
-  "Wiki Walk": "images/wiki-walk-icon.png",
-  "TV Rex": "images/tv-rex-icon.png"
+  "Wiki Walk": "images/wiki-walk-icon.png?v=2",
+  "TV Rex": "images/tv-rex-icon.png?v=2"
 };
 
 (function () {
