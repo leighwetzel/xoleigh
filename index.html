@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xoleigh — small apps for friends and family</title>
+<meta name="description" content="Small apps I build for friends and family: Wiki Walk and TV Rex.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <span id="today"></span>
+    <span class="tagline">Small apps &amp; occasional writing</span>
+    <a class="btn btn-small" id="subscribe-top" href="#signup" hidden>Subscribe</a>
+  </div>
+
+  <header class="masthead">
+    <h1>xoleigh</h1>
+  </header>
+  <div class="masthead-rule" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Sections">
+    <a href="#apps">Apps</a>
+    <a href="#updates">Updates</a>
+    <a href="#" id="nav-writing" hidden>Writing</a>
+  </nav>
+
+  <main>
+    <section id="apps" class="apps-section">
+      <h2 class="label-bar">The apps</h2>
+      <div class="apps">
+
+        <article class="app-card">
+          <span class="tag tag-right">Beta</span>
+          <img class="app-photo app-photo-walk" src="images/wiki-walk-saint-remy.jpg" alt="Using Wiki Walk on a phone in a narrow street in Saint-Rémy-de-Provence" width="1050" height="1400">
+          <div class="app-body">
+            <span class="kicker">walk.xoleigh.com</span>
+            <h3>Wiki Walk</h3>
+            <p class="subtitle">A walking tour in your pocket.</p>
+            <p>Built for our trip to France: see what's nearby and listen to the Wikipedia article as you walk by. Works offline, in English and French.</p>
+            <p class="credit">Photo: Saint-Rémy-de-Provence</p>
+            <a class="btn" href="https://walk.xoleigh.com">Open Wiki Walk →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <span class="tag tag-left">Beta</span>
+          <img class="app-photo app-photo-tv" src="images/tv-rex-living-room.jpg" alt="Two people watching TV in a living room" width="1400" height="1050">
+          <div class="app-body">
+            <span class="kicker">tv.xoleigh.com</span>
+            <h3>TV Rex</h3>
+            <p class="subtitle">What we're all loving on TV.</p>
+            <p>Streaming recommendations shared among friends and family.</p>
+            <a class="btn" href="https://tv.xoleigh.com">Open TV Rex →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="lower">
+      <section id="updates" class="updates">
+        <h2 class="label-bar">Latest updates</h2>
+        <ol class="update-list" id="update-list"></ol>
+      </section>
+
+      <aside class="side" id="side" hidden>
+        <section id="signup" class="signup" hidden>
+          <h2>Get the occasional email</h2>
+          <p>New apps and stories, when there's something worth saying. Sent from Substack.</p>
+          <a class="btn btn-invert" id="signup-link" href="#">Subscribe on Substack</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">xoleigh</span>
+    <span><a href="https://walk.xoleigh.com">Wiki Walk</a> · <a href="https://tv.xoleigh.com">TV Rex</a></span>
+  </footer>
+
+</div>
+<script src="updates.js?v=1"></script>
+<script src="site.js?v=1"></script>
+</body>
+</html>

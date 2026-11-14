@@ -1,0 +1,140 @@
+/* xoleigh.com — square newspaper style, navy accent */
+:root {
+  --ink: #121212;
+  --navy: #1F3A5F;
+  --tint: #EAF0F6;
+  --muted: #4F4F4F;
+  --soft-text: #333333;
+  --on-navy: #D6E1EE;
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans: 'Libre Franklin', system-ui, -apple-system, sans-serif;
+  --display: 'Playfair Display', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #FFFFFF; color: var(--ink); font-family: var(--serif); }
+a { color: var(--ink); }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+
+.page { max-width: 1200px; margin: 0 auto; padding: 0 32px 48px; }
+
+/* Top bar */
+.topbar {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  padding: 16px 0 12px; font-family: var(--sans); font-size: 13px; color: var(--muted);
+}
+#today { font-weight: 600; }
+
+/* Masthead */
+.masthead { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 16px 0 12px; text-align: center; }
+.masthead h1 { margin: 0; font-family: var(--display); font-weight: 900; font-size: 96px; line-height: 1; letter-spacing: -2px; }
+.masthead-rule { height: 6px; background: var(--ink); margin-top: 3px; }
+
+/* Nav */
+.nav {
+  display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+  font-family: var(--sans); font-size: 15px; font-weight: 700; border-bottom: 3px solid var(--ink);
+}
+.nav a { min-height: 48px; display: flex; align-items: center; text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* Section labels */
+.label-bar {
+  display: inline-block; margin: 0; font-family: var(--sans); font-size: 14px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; background: var(--ink); color: #FFFFFF; padding: 8px 14px;
+}
+
+/* Buttons */
+.btn {
+  align-self: flex-start; min-height: 50px; padding: 0 22px; display: inline-flex; align-items: center;
+  background: var(--navy); color: #FFFFFF; border: 2px solid var(--ink);
+  font-family: var(--sans); font-size: 16px; font-weight: 700; text-decoration: none;
+}
+.btn:hover { background: var(--ink); }
+.btn-small { min-height: 42px; padding: 0 18px; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; }
+.btn-invert { background: #FFFFFF; color: var(--ink); }
+.btn-invert:hover { background: var(--tint); }
+
+/* Apps */
+.apps-section { padding-top: 40px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+.apps { display: flex; flex-wrap: wrap; gap: 32px; width: 100%; }
+.app-card {
+  flex: 1 1 460px; min-width: 0; border: 3px solid var(--ink); background: #FFFFFF;
+  display: flex; flex-direction: column; position: relative;
+}
+.app-photo { width: 100%; height: 300px; object-fit: cover; display: block; border-bottom: 3px solid var(--ink); }
+.app-photo-walk { object-position: 50% 68%; }
+.app-photo-tv { object-position: 50% 55%; }
+.app-body { padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.app-body h3 { margin: 0; font-size: 40px; font-weight: 700; line-height: 1.05; letter-spacing: -0.6px; }
+.app-body p { margin: 0; font-size: 18px; line-height: 1.5; color: var(--soft-text); }
+.app-body .subtitle { font-size: 22px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.app-body .credit { font-family: var(--sans); font-size: 12px; color: #5A5A5A; }
+.app-body .btn { margin-top: auto; }
+.kicker { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--navy); }
+.tag {
+  position: absolute; top: -16px; right: -12px; z-index: 1;
+  background: var(--navy); color: #FFFFFF; border: 2px solid var(--ink); padding: 6px 12px;
+  font-family: var(--sans); font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+}
+.tag-right { transform: rotate(4deg); }
+.tag-left { transform: rotate(-4deg); }
+
+/* Updates + side column */
+.lower { display: flex; flex-wrap: wrap; gap: 40px; padding-top: 64px; }
+.updates { flex: 999 1 560px; min-width: 0; max-width: 780px; }
+.side { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.lower.has-side .updates { max-width: none; }
+.update-list { list-style: none; margin: 8px 0 0; padding: 0; border-top: 3px solid var(--ink); }
+.update { display: flex; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #CFCFCF; }
+.update:last-child { border-bottom: 3px solid var(--ink); }
+.update img { width: 52px; height: 52px; flex: none; display: block; }
+.update-meta { font-family: var(--sans); font-size: 13px; color: #5A5A5A; }
+.update-meta b { color: var(--ink); }
+.update-text { display: block; margin-top: 4px; font-size: 21px; font-weight: 600; line-height: 1.3; }
+
+/* Sign-up box */
+.signup { background: var(--navy); color: #FFFFFF; border: 3px solid var(--ink); padding: 26px 24px; display: flex; flex-direction: column; gap: 12px; }
+.signup h2 { margin: 0; font-size: 30px; font-weight: 700; line-height: 1.1; }
+.signup p { margin: 0; font-size: 17px; line-height: 1.5; color: var(--on-navy); }
+
+/* Footer */
+.footer {
+  margin-top: 64px; border-top: 3px solid var(--ink); padding-top: 16px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  font-family: var(--sans); font-size: 14px; color: var(--muted);
+}
+.footer a { color: var(--muted); }
+.footer-name { font-family: var(--display); font-weight: 900; font-size: 22px; color: var(--ink); }
+
+/* Phone */
+@media (max-width: 760px) {
+  .page { padding: 0 16px 32px; }
+  .topbar { font-size: 12px; }
+  .tagline { display: none; }
+  .masthead { padding: 10px 0 8px; }
+  .masthead h1 { font-size: 56px; letter-spacing: -1px; }
+  .masthead-rule { height: 5px; }
+  .nav { gap: 28px; font-size: 14px; }
+  .label-bar { font-size: 12px; padding: 6px 10px; }
+  .apps-section { padding-top: 24px; gap: 16px; }
+  .apps { gap: 28px; }
+  .app-card { flex-basis: 100%; border-width: 2px; }
+  .app-photo { height: 240px; border-bottom-width: 2px; }
+  .app-photo-walk { object-position: 50% 72%; }
+  .app-body { padding: 16px 16px 18px; gap: 8px; }
+  .app-body h3 { font-size: 28px; }
+  .app-body .subtitle { font-size: 18px; }
+  .app-body p { font-size: 16px; line-height: 1.45; }
+  .app-body .btn { align-self: stretch; justify-content: center; margin-top: 6px; }
+  .tag { top: -12px; right: -6px; font-size: 11px; padding: 4px 9px; }
+  .lower { padding-top: 32px; gap: 28px; }
+  .update { gap: 12px; padding: 14px 0; }
+  .update img { width: 44px; height: 44px; }
+  .update-meta { font-size: 12px; }
+  .update-text { font-size: 17px; line-height: 1.35; }
+  .signup h2 { font-size: 25px; }
+  .footer { margin-top: 40px; }
+}
