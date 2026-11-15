@@ -34,7 +34,7 @@ Square newspaper style: newspaper type with square, graphic structure.
 - **Section labels** are black bars with white caps text ("THE APPS", "LATEST UPDATES").
 - **Apps are the first thing on the page**, as two equal cards side by side on desktop, stacked full width on phone. Each card: photo, small tilted navy **BETA** tag, web address, name, subtitle, description, navy Open button.
 - **Latest updates** rows: app icon + **app name** · date, then the update. Not text tags, not icon-only.
-- **Sign-up box** sits to the right of Latest updates on desktop (hidden until Substack exists).
+- **Sign-up box** sits to the right of Latest updates on desktop. Turned on Nov 15, 2026, linking to Leigh's Substack (@leighwetzel).
 - **Footer:** "xoleigh" and the app names (linked), not URLs.
 - Never refer to Leigh in the third person on the site (no "Leigh using…", no "By Leigh").
 
@@ -56,7 +56,7 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 
 **Add an update:** in `updates.js`, copy a line to the top, change date (YYYY-MM-DD), app ("Wiki Walk" or "TV Rex") and text. Write it the way you'd tell a relative, one short sentence. Bump `updates.js?v=` in `index.html`. Dates come from real ship dates (the app repos' commit history is a good source).
 
-**Turn on the Substack:** set `substackUrl` in `site.js` (planned: write.xoleigh.com, Substack custom domain is a one-time $50). That shows the Subscribe button and sign-up box. Set `showWriting: true` once there's a post.
+**Substack:** on. `substackUrl` in `site.js` is `https://leighwetzel.substack.com/subscribe`; it shows the Subscribe button (top bar) and the sign-up box. If the custom domain (write.xoleigh.com, one-time $50) gets set up, change that URL. Set `showWriting: true` once there's a post.
 
 **Add a new app:** a third card in `.apps`, an icon in `images/`, an entry in `APP_ICONS` in `site.js`. Check the desktop layout still works with three cards.
 
@@ -68,7 +68,7 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 
 ## Open items
 
-- Substack: pick a name, set up write.xoleigh.com, write the Wiki Walk story (a draft exists).
+- Substack: sign-up is live (leighwetzel.substack.com). Still open: custom domain write.xoleigh.com, write the Wiki Walk story (a draft exists).
 - "Read the story" links stay hidden until a story exists.
 - App pages (one per app with its own Updates list) were designed on the canvas but not built.
 - No favicon yet.

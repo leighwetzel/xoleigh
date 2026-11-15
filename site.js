@@ -1,7 +1,7 @@
 // Site settings. Turn things on here when they're ready.
 var SETTINGS = {
   // Paste your Substack address here (e.g. "https://write.xoleigh.com") to show the sign-up box and Subscribe button.
-  substackUrl: "",
+  substackUrl: "https://leighwetzel.substack.com/subscribe",
   // Set to true once there's at least one post, to show the Writing link.
   showWriting: false,
   // How many updates to show on the home page.
