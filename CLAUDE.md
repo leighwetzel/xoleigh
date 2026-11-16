@@ -68,8 +68,8 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 
 ## Open items
 
-- Substack: sign-up is live (leighwetzel.substack.com). Still open: custom domain write.xoleigh.com, write the Wiki Walk story (a draft exists).
-- "Read the story" links stay hidden until a story exists.
+- Substack: sign-up is live (leighwetzel.substack.com). Still open: custom domain write.xoleigh.com.
+- "Read the story" links: Wiki Walk's is live (Nov 16, 2026), a navy underlined text link next to the Open button (below it, full width, on phone), opening the Substack post "Still trying to impress my dad" in a new tab. TV Rex gets one when its story exists.
 - App pages (one per app with its own Updates list) were designed on the canvas but not built.
 - No favicon yet.
 
