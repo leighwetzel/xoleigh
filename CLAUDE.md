@@ -74,4 +74,4 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 - No favicon yet.
 
 ## Analytics
-Google Analytics loads through the Google tag `GTM-K6GPQTLB` (added Nov 16, 2026), pasted at the top of `<head>` in `index.html`. One GA4 stream covers xoleigh.com and the walk/tv subdomains; keep the same tag on all three.
+Google Analytics uses the standard gtag.js snippet for measurement ID `G-X6FH2TP6C8` (stream "xoleigh (all)", added Nov 16, 2026), right after `<meta charset>` in `index.html`. One GA4 stream covers xoleigh.com and the walk/tv subdomains; keep the same snippet on all three. (A GTM container, GTM-K6GPQTLB, was tried first and replaced; don't add both or visits double count.)
