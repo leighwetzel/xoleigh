@@ -72,3 +72,6 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 - "Read the story" links stay hidden until a story exists.
 - App pages (one per app with its own Updates list) were designed on the canvas but not built.
 - No favicon yet.
+
+## Analytics
+Google Analytics loads through the Google tag `GTM-K6GPQTLB` (added Nov 16, 2026), pasted at the top of `<head>` in `index.html`. One GA4 stream covers xoleigh.com and the walk/tv subdomains; keep the same tag on all three.
