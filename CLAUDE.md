@@ -45,7 +45,7 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 **Wiki Walk** — walk.xoleigh.com
 - Subtitle: A walking tour in your pocket.
 - Description: Built for our trip to France: see what's nearby and listen to the Wikipedia article as you walk by. Works offline, in English and French.
-- Photo: tall shot of Leigh with her phone in a narrow street in Saint-Rémy-de-Provence (not Aix). Credit line: "Photo: Saint-Rémy-de-Provence".
+- Photo: tall shot of Leigh with her phone in a narrow street in Saint-Rémy-de-Provence (not Aix). No caption (removed Nov 16, 2026).
 
 **TV Rex** — tv.xoleigh.com (the app was renamed from "TV"; the address stays tv.)
 - Subtitle: What we're all loving on TV.
