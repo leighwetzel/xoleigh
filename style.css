@@ -97,7 +97,7 @@ img { max-width: 100%; }
 .lower.has-side .updates { max-width: none; }
 .update-list { list-style: none; margin: 8px 0 0; padding: 0; border-top: 3px solid var(--ink); }
 .update { display: flex; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #CFCFCF; }
-.update:last-child { border-bottom: 3px solid var(--ink); }
+.update:last-child { border-bottom: none; }
 .update img { width: 52px; height: 52px; flex: none; display: block; border-radius: 22.5%; box-shadow: 0 0 0 1.5px #CFCFCF; } /* iOS app-icon corner, scales with size; thin gray outline so white icons read on white */
 .update-meta { font-family: var(--sans); font-size: 13px; color: #5A5A5A; }
 .update-meta b { color: var(--ink); }
