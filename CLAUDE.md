@@ -32,7 +32,7 @@ Square newspaper style: newspaper type with square, graphic structure.
 - **Square corners everywhere. No drop shadows.** Thick black outlines (3px desktop, 2px phone) on cards, photos and BETA tags. Buttons and the navy sign-up box have no outline (decided Nov 15, 2026: felt heavy). The Subscribe button inside the sign-up box spans the box's full width. Exception: app icons in Latest updates use the iOS app-icon corner (`border-radius: 22.5%`) with a thin 1.5px #CFCFCF outline so the white icons read on the white page (decided Nov 15, 2026).
 - **Section labels** are black bars with white caps text ("THE APPS", "LATEST UPDATES").
 - **Apps are the first thing on the page**, as two equal cards side by side on desktop, stacked full width on phone. Each card: photo, small tilted navy **BETA** tag, web address, name, subtitle, description, navy Open button.
-- **Latest updates** rows: app icon + **app name** · date, then the update. Not text tags, not icon-only.
+- **Latest updates** rows: app icon + **app name** · date, then the update. Not text tags, not icon-only. No rule under the last row (removed Nov 18, 2026).
 - **Sign-up box** sits to the right of Latest updates on desktop. Turned on Nov 15, 2026, linking to Leigh's Substack (@leighwetzel).
 - **Footer:** "xoleigh" and the app names (linked), not URLs.
 - Never refer to Leigh in the third person on the site (no "Leigh using…", no "By Leigh").
