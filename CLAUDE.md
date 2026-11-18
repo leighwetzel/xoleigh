@@ -19,8 +19,7 @@ Friends and family of all ages, mostly on iPhone and iPad, including people in t
 |---|---|
 | `index.html` | The page |
 | `style.css` | The look; phone layout is the `max-width: 760px` block at the bottom |
-| `updates.js` | Release notes, newest first |
-| `site.js` | Settings (Substack, Writing, how many updates) and renders the updates list |
+| `site.js` | Settings (Substack, Writing, how many updates); fetches each app's `updates.json` and renders the merged list |
 | `images/` | App photos and app icons |
 
 ## Design (decided — don't drift)
@@ -54,11 +53,11 @@ Directions tried and rejected: index cards, color tiles, Pocket-style, bright/pl
 
 ## Common tasks
 
-**Add an update:** in `updates.js`, copy a line to the top, change date (YYYY-MM-DD), app ("Wiki Walk" or "TV Rex") and text. Write it the way you'd tell a relative, one short sentence. Bump `updates.js?v=` in `index.html`. Dates come from real ship dates (the app repos' commit history is a good source).
+**Updates (automatic since Nov 18, 2026):** release notes live in each app's repo, not here. The home page fetches `https://tv.xoleigh.com/updates.json` and `https://walk.xoleigh.com/updates.json` on load (`UPDATE_SOURCES` in `site.js`), merges them newest first and shows `updatesToShow`. To add one, edit that app's `updates.json` (newest at the top; `date` YYYY-MM-DD, `text` one short sentence the way you'd tell a relative). No change to this repo needed. (Replaced the hand-edited `updates.js`, which went stale because app work never touched this repo.)
 
 **Substack:** on. `substackUrl` in `site.js` is `https://leighwetzel.substack.com/subscribe`; it shows the Subscribe button (top bar) and the sign-up box. If the custom domain (write.xoleigh.com, one-time $50) gets set up, change that URL. Set `showWriting: true` once there's a post.
 
-**Add a new app:** a third card in `.apps`, an icon in `images/`, an entry in `APP_ICONS` in `site.js`. Check the desktop layout still works with three cards.
+**Add a new app:** a third card in `.apps`, an icon in `images/`, an entry in `APP_ICONS` and `UPDATE_SOURCES` in `site.js`, and an `updates.json` in the app's repo. Check the desktop layout still works with three cards.
 
 ## Related repos
 

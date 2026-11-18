@@ -8,6 +8,12 @@ var SETTINGS = {
   updatesToShow: 6
 };
 
+// Where each app's release notes live (updates.json in the app's repo).
+var UPDATE_SOURCES = [
+  { app: "TV Rex", url: "https://tv.xoleigh.com/updates.json" },
+  { app: "Wiki Walk", url: "https://walk.xoleigh.com/updates.json" }
+];
+
 var APP_ICONS = {
   "Wiki Walk": "images/wiki-walk-icon.png?v=3",
   "TV Rex": "images/tv-rex-icon.png?v=3"
@@ -36,9 +42,24 @@ var APP_ICONS = {
     document.getElementById("nav-writing").hidden = false;
   }
 
+  // Release notes live in each app's own repo, so shipping an app update
+  // shows up here with no change to this site.
   var list = document.getElementById("update-list");
-  var items = (window.UPDATES || []).slice(0, SETTINGS.updatesToShow);
-  items.forEach(function (u) {
+  Promise.all(UPDATE_SOURCES.map(function (src) {
+    return fetch(src.url, { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (rows) {
+        return rows.map(function (u) { return { date: u.date, app: src.app, text: u.text }; });
+      })
+      .catch(function () { return []; });
+  })).then(function (groups) {
+    var all = [].concat.apply([], groups);
+    // Newest first; same-day notes keep each app's own order.
+    all.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+    all.slice(0, SETTINGS.updatesToShow).forEach(addUpdate);
+  });
+
+  function addUpdate(u) {
     var li = document.createElement("li");
     li.className = "update";
 
@@ -65,7 +86,7 @@ var APP_ICONS = {
     li.appendChild(icon);
     li.appendChild(body);
     list.appendChild(li);
-  });
+  }
 
   function formatDate(iso) {
     var p = iso.split("-");
